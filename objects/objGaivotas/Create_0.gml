@@ -1,0 +1,1 @@
+image_xscale = 1; // Garante que o sprite não nasce virado por padrão.
