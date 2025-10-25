@@ -23,5 +23,16 @@ if reciclavel > 0 and n_reciclavel > 0 {
 }
 
 if pontuacao = 4{
-	room_goto_next();
+	if room == c_fase_7{
+		game_restart();
+	}
+	else room_goto_next();
 }
+
+// Verifica e ajusta a posição X
+if (x < 0) x = 0;
+if (x > room_width) x = room_width;
+
+// Verifica e ajusta a posição Y
+if (y < 0) y = 0;
+if (y > room_height) y = room_height;
